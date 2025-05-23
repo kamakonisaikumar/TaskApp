@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(195, 53%, 94%) ;
+    font-family: 'Roboto',sans-serif;
+    background: linear-gradient(to left,rgba(174, 0, 255, 0.632),rgba(0, 0, 255, 0.824));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    border: 1px solid black;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.279);   
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type='text']{
+    width: 70%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border:3px solid #1a73e8;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type='text']:focus{
+  box-shadow: 0 1px 2px #0056b3;
+  border-color:  #0056b3;
+}
+
+button{
+    padding: 12px 30px;
+    border:none;
+    border-radius: 9px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+background-color: #0056b3;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    border-bottom: 1px dashed #ccc;
+    font-size: 1rem;
+}
+li button{
+   background-color:  transparent;
+   color:#34a853;
+   font-size: 1.5rem;
+   border: none;
+   cursor: pointer;
+   margin-right: 10px;
+   transition: 0.3s;
+}
+li button:hover{
+    color: #0c661b;
+}
+
+li .remove-btn{
+    background-color: #ea4335;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+li .remove-btn{
+    background-color: #b71c1c;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #6c757d;
+}
